@@ -1,9 +1,14 @@
-# api documentation for  [gulp-cli (v1.2.2)](http://gulpjs.com)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-cli.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-cli)
+# npmdoc-gulp-cli
+
+#### api documentation for  [gulp-cli (v1.2.2)](http://gulpjs.com)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-cli.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-cli)
+
 #### Command line interface for gulp
 
-[![NPM](https://nodei.co/npm/gulp-cli.png?downloads=true)](https://www.npmjs.com/package/gulp-cli)
+[![NPM](https://nodei.co/npm/gulp-cli.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-cli)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-cli/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-cli_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-cli/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-cli/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-cli/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-cli/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-cli/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-cli/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Gulp Team",
-        "email": "team@gulpjs.com",
         "url": "http://gulpjs.com/"
     },
     "bin": {
@@ -94,16 +98,13 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "contra",
-            "email": "contra@wearefractal.com"
+            "name": "contra"
         },
         {
-            "name": "fractal",
-            "email": "contact@wearefractal.com"
+            "name": "fractal"
         },
         {
-            "name": "phated",
-            "email": "blaine.bublitz@gmail.com"
+            "name": "phated"
         }
     ],
     "man": [
@@ -111,7 +112,6 @@
     ],
     "name": "gulp-cli",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gulpjs/gulp-cli.git"
@@ -127,16 +127,6 @@
     "version": "1.2.2"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-cli](#apidoc.module.gulp-cli)
-
-
-
-# <a name="apidoc.module.gulp-cli"></a>[module gulp-cli](#apidoc.module.gulp-cli)
 
 
 
