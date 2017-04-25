@@ -1,6 +1,6 @@
 # npmdoc-gulp-cli
 
-#### api documentation for  [gulp-cli (v1.2.2)](http://gulpjs.com)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-cli.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-cli)
+#### basic api documentation for  [gulp-cli (v1.3.0)](http://gulpjs.com)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-cli.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-cli)
 
 #### Command line interface for gulp
 
@@ -35,13 +35,13 @@
     "dependencies": {
         "archy": "^1.0.0",
         "chalk": "^1.1.0",
+        "copy-props": "^1.4.1",
         "fancy-log": "^1.1.0",
         "gulplog": "^1.0.0",
         "interpret": "^1.0.0",
-        "liftoff": "^2.1.0",
+        "liftoff": "^2.3.0",
         "lodash.isfunction": "^3.0.8",
         "lodash.isplainobject": "^4.0.4",
-        "lodash.isstring": "^4.0.1",
         "lodash.sortby": "^4.5.0",
         "matchdep": "^1.0.0",
         "mute-stdout": "^1.0.0",
@@ -56,22 +56,24 @@
     "devDependencies": {
         "babel-preset-es2015": "^6.5.0",
         "babel-register": "^6.5.1",
-        "code": "^1.2.1",
         "coveralls": "^2.7.0",
         "eslint": "^1.7.3",
         "eslint-config-gulp": "^2.0.0",
+        "expect": "^1.20.2",
         "fs-extra": "^0.26.1",
         "github-changes": "^1.0.1",
         "gulp": "github:gulpjs/gulp#4.0",
+        "gulp-test-tools": "^0.6.1",
         "jscs": "^2.3.5",
         "jscs-preset-gulp": "^1.0.0",
-        "lab": "^6.2.0",
-        "marked-man": "^0.1.3"
+        "marked-man": "^0.1.3",
+        "mocha": "^3.2.0",
+        "nyc": "^10.0.0"
     },
     "directories": {},
     "dist": {
-        "shasum": "7392def6316c6e7939a4f296f3f540151ae3a275",
-        "tarball": "https://registry.npmjs.org/gulp-cli/-/gulp-cli-1.2.2.tgz"
+        "shasum": "a6bfbb8be35341be290ae45cd3e401071216edd4",
+        "tarball": "https://registry.npmjs.org/gulp-cli/-/gulp-cli-1.3.0.tgz"
     },
     "engines": {
         "node": ">= 0.10"
@@ -83,7 +85,7 @@
         "completion",
         "gulp.1"
     ],
-    "gitHead": "51b301a043bd5617465fbb73ced86bf2c35a1924",
+    "gitHead": "879c5643a498fb485cb683b285145bd8f1ff1213",
     "homepage": "http://gulpjs.com",
     "keywords": [
         "build",
@@ -118,13 +120,14 @@
     },
     "scripts": {
         "changelog": "github-changes -o gulpjs -r gulp-cli -b master -f ./CHANGELOG.md --order-semver --use-commit-body",
-        "coveralls": "lab -r lcov | coveralls",
+        "cover": "nyc --reporter=lcov --reporter=text-summary npm test",
+        "coveralls": "nyc --reporter=text-lcov npm test | coveralls",
         "lint": "eslint . && jscs index.js bin/ lib/ test/",
         "prepublish": "marked-man --name gulp docs/CLI.md > gulp.1",
         "pretest": "npm run lint",
-        "test": "lab test/*.js -cv -I Reflect"
+        "test": "mocha --async-only --timeout 3000 test/lib test"
     },
-    "version": "1.2.2"
+    "version": "1.3.0"
 }
 ```
 
